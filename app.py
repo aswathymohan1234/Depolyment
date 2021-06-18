@@ -55,8 +55,9 @@ def upload():
         f.save(file_path)
         # Make prediction
         preds = model_predict(file_path, model)
-             
-        return preds
+        result=preds
+        return result     
+        
     return None
 if __name__ == '__main__':
     app.run()
